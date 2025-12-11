@@ -1,0 +1,57 @@
+html ___________________________________________________________________________________
+
+   <header class="header">
+        <a href="#" class="logo">MY CV</a>
+        <i class="bi bi-list" id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#Services">Services</a>
+            <a href="#Portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+
+
+css_____________________________________________________________________________________
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.header .sticky {
+    border-bottom: .1rem solid rgba(0, 0, 0, .2);
+}
+
+/* logo style */
+.logo {
+    font-size: 2.5rem;
+    color: var(--text-color);
+    font-weight: 600;
+    cursor: default;
+    text-decoration: none;
+}
+
+/* navbar main style */
+.navbar a {
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+    text-decoration: none;
+} 
+
+.navbar a:hover,
+.navbar a.active {
+    color: var(--main-color);
+} 
